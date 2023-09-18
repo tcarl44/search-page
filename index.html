@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+ 
+  <div class="container">
+ 
+  <div>
+       <marquee behavior="blink" direction="right">
+    <h1>😆😆💻 Wellcome To Carl44's Workshope 💻😆😆</h1>
+  </marquee>
+  <hr>
+  <br>
+</div>
+
+  <form action="/search" method="get" class="search-input">
+  <input type="text" name="q" placeholder="Welcome..." type="submit">
+  <button type="submit" class="search-input" inputmode="text">🔎</button>
+</form>
+<br>
+  <div class="word">
+  <span class="text first-text">I'm a</span>
+  <span>👇</span>
+  <br>
+  <span class="text sec-text">Photographer</span>
+</div>
+
+<div class="input">
+  <br>
+  <h1>WHAT IS YOUR FOCUS FOR TODAY! </h1>
+  <hr>
+  <br>
+  <h1>💻💻</h1>
+</div>
+<br>
+   <div class="images">
+    <hr>
+    <img src="./images/Screenshot from 2023-09-16 11-25-34.png" alt="background" />
+    <hr>
+  </div>
+  
+  <!-- <div class="logo-container">
+    <img src="images/Screenshot from 2023-09-16 11-25-34.png" alt="Logo">
+  </div> -->
+<!-- <div class="icon" logo="./images/WhatsApp Image 2023-08-11 at 16.42.12.jpg">
+  </div> -->
+  </div>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script>
+    const text = document.querySelector(".sec-text");
+
+    const textLoad = () => {
+      setTimeout(() => {
+        text.textContent = "Photographer";
+      }, 0);
+      setTimeout(() => {
+        text.textContent = "Developer";
+      }, 3000);
+      setTimeout(() => {
+        text.textContent = "Designer";
+      }, 6000);
+    }
+
+    textLoad();
+    setInterval(textLoad, 9000);
+  </script>
+
+</body>
+<!-- <header>
+  <div class="display" data-aos="fade-in">
+    <h1>CARLSEN</h1>
+    <P>
+      I'am
+      <span class="typed" data-type-item="photographer,desginer,developer"></span>
+      <span class="typed-cursor typed-cursor---blink" aria-hidden="true">|</span>
+    </P>
+  </div>
+
+</header> -->
+</html>

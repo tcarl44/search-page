@@ -1,0 +1,142 @@
+body{
+  margin: 65px;
+  display: block;
+  /* image-rendering: auto; */
+  color: blanchedalmond;
+  background-image: url(./images/logo.png);
+  object-fit: cover;
+  object-position: center;
+  background-size: cover;
+}
+
+.container{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.word{
+  width: 246px;
+  overflow: hidden;
+}
+
+.word .text{
+  position: relative;
+  color: rgb(232, 226, 226);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.word .text.first-text{
+  color: rgb(194, 5, 5);
+}
+
+.text.sec-text:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(/images/logo.png);
+  object-fit: cover;
+  object-position: center;
+  background-size: cover;
+  border-left: 2px solid rgb(232, 226, 226);
+  animation: animate 3s steps(12) infinite;
+}
+
+@keyframes animate {
+  40%, 60%{
+    left: calc(100% + 4px);
+  }
+  100%{
+    left: 0%;
+  }
+}
+
+input{
+  /* display: flex;
+  flex-direction: row; */
+  width: 400px;
+  height: 5vh;
+}
+
+button{
+  text-size-adjust: 20px;
+  width: 50px;
+  height: 5vh;
+}
+
+img{
+  height: 20vh;
+}
+
+/* .logo-container{
+  display: flex;
+  justify-content: center;
+} */
+
+/* img{
+  border-radius: 60%;
+  border: 2% solid;
+  size-adjust: 25%;
+} */
+
+/* .letter {
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+} */
+
+/* .letter {
+  opacity: 0;
+  animation-name: disappear;
+  animation-duration: 20s;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* @keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+/* form{
+
+} */
+
+/* .search-input {
+  width: 400px;
+  height: 400px;
+  font-size: 16px;
+  padding: 10px;
+} */
+/* .text{
+  display:flex;
+  height: 20vh;
+} */
+/* .search{
+
+  display: flex;
+
+  justify-content: center;
+} */
